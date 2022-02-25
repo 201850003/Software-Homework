@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    # todo
+    url: jdbc:mysql://mysql-service.todo-list-backend-623.svc.cluster.local:3306/todolist?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8&useSSL=false
+    # todo
+    username: root
+    # todo
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.demo.model.po
+  configuration:
+    map-underscore-to-camel-case: true
+
